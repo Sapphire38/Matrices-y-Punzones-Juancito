@@ -8,6 +8,7 @@
   <title>Matrices y Punzones, Córdoba</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./mobile.css">
+  <link rel="stylesheet" href="./lib/WOW-master/css/libs/animate.css">
   <link rel="icon" href="./resource/cosa.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +30,11 @@
   <div class="menu-burger" id="menu-b">
     <div class="cont-x"><button id="close-collapce-button">X</button></div>
     <ul>
-      <li><a href="#head">Inicio</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#tips">Servicios</a></li>
-      <li><a href="#jobs">Nuestro trabajo</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#head" onclick="cerrarMenu()">Inicio</a></li>
+      <li><a href="#nosotros" onclick="cerrarMenu()">Nosotros</a></li>
+      <li><a href="#tips" onclick="cerrarMenu()">Servicios</a></li>
+      <li><a href="#jobs" onclick="cerrarMenu()">Nuestro trabajo</a></li>
+      <li><a href="#contacto" onclick="cerrarMenu()">Contacto</a></li>
     </ul>
   </div>
 
@@ -67,10 +68,10 @@
       </a>
     </div>
 
-    <h1><span>En Córdoba</span><br> Matrices y Punzones <br>para pregadoras de chapa</h1>
-    <button class="contacto">
-      CONTACTO
-    </button>
+    <h1 class="wow fadeInLeft"><span>En Córdoba</span><br> Matrices y Punzones <br>para pregadoras de chapa</h1>
+    <a class="wow fadeInLeft" href="#contacto"> <button class="contacto">
+        CONTACTO
+      </button></a>
 
 
     <div class="bottomScroll">
@@ -88,41 +89,42 @@
 
 
   <div id="nosotros">
-    <div class="top-line"></div>
-    <h5 class="subTitle">¡Bienvenido!</h5>
-    <h2 class="title">Somos líder en la fabricación de matrices y punzones para plegadoras de chapas.</h2>
+    <div class="top-line wow fadeIn"></div>
+    <h5 class="subTitle wow fadeIn">¡Bienvenido!</h5>
+    <h2 class="title wow fadeIn">Somos líder en la fabricación de matrices y punzones para plegadoras de chapas.</h2>
 
-    <h6 class="text mt-20">Una compañía con amplia experiencia en el sector de la industria metalúrgica y nos dedicamos
+    <h6 class="text mt-20 wow fadeIn" data-wow-delay="1s">Una compañía con amplia experiencia en el sector de la
+      industria metalúrgica y nos dedicamos
       a la producción de herramientas de alta calidad para el doblado y corte de chapas. </h6>
 
 
-      <div class="img-cont">
-        <img src="./resource/WhatsApp Image 2023-04-18 at 13.13.39.jpeg" alt="">
-  
-        <div class="stick-v"></div>
-  
-        <img src="./resource/2.jpeg" alt="">
-  
-        <div class="stick-v"></div>
-  
-        <img src="./resource/3.jpeg" alt="">
-  
-        <div class="stick-v"></div>
-  
-        <img src="./resource/4.jpeg" alt="">
-      </div>
+    <div class="img-cont wow fadeInUp" data-wow-delay="1s">
+      <img src="./resource/WhatsApp Image 2023-04-18 at 13.13.39.jpeg" alt="">
+
+      <div class="stick-v"></div>
+
+      <img src="./resource/2.jpeg" alt="">
+
+      <div class="stick-v"></div>
+
+      <img src="./resource/3.jpeg" alt="">
+
+      <div class="stick-v"></div>
+
+      <img src="./resource/4.jpeg" alt="">
+    </div>
 
   </div>
 
   <div id="tips">
 
-    <h5 class="subTitle">Servicios</h5>
-    <h2 class="title">Nuestro compromiso con su satisfacción.</h2>
+    <h5 class="subTitle wow fadeIn">Servicios</h5>
+    <h2 class="title wow fadeIn">Nuestro compromiso con su satisfacción.</h2>
 
 
-    <div class="box-serv">
+    <div class="box-serv wow fadeInUp" data-wow-delay="1s">
       <div>
-        <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="hover"
+        <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
           colors="primary:#121331,secondary:#39b54a" style="width:90px;height:90px">
         </lord-icon>
         <h6 class="text-card">Colaboramos con cada cliente para producir herramientas personalizadas que se adaptan a
@@ -131,7 +133,7 @@
       </div>
 
       <div>
-        <lord-icon src="https://cdn.lordicon.com/sbiheqdr.json" trigger="hover"
+        <lord-icon src="https://cdn.lordicon.com/sbiheqdr.json" trigger="loop"
           colors="primary:#121331,secondary:#39b54a" style="width:80px;height:80px">
         </lord-icon>
         <h6 class="text-card">Nuestro equipo de altamente capacitado y experimentado trabaja con los mejores materiales
@@ -140,7 +142,7 @@
       </div>
 
       <div>
-        <lord-icon src="https://cdn.lordicon.com/imamsnbq.json" trigger="hover"
+        <lord-icon src="https://cdn.lordicon.com/imamsnbq.json" trigger="loop"
           colors="primary:#121331,secondary:#39b54a" style="width:80px;height:80px">
         </lord-icon>
         <h6 class="text-card">Contamos con un excepcional servicio al cliente que está a su disposición en todo momento,
@@ -155,12 +157,12 @@
 
   <div id="jobs">
 
-    <div class="top-jobs">
-      <h5 class="subTitle">Trabajos recientes</h5>
+    <div class="top-jobs wow fadeIn">
+      <h5 class="subTitle ">Trabajos recientes</h5>
       <h2 class="title">Descubra cómo hemos ayudado a nuestros clientes a mejorar su producción de chapas.</h2>
     </div>
 
-    <div class="row">
+    <div class="row wow fadeInUp" data-wow-delay="1s">
       <div class="column">
         <img src="./resource/oal/re (1).jpeg">
         <img src="./resource/oal/re (2).jpeg">
@@ -193,21 +195,21 @@
 
   <div id="contacto">
 
-    <h5 class="subTitle">Contacto</h5>
-    <h2 class="title">Estamos aquí para ayudarlo.</h2>
+    <h5 class="subTitle wow fadeIn">Contacto</h5>
+    <h2 class="title wow fadeIn">Estamos aquí para ayudarlo.</h2>
 
-    <div class="card-form" id="card-form">
+    <div id="card-form" class="card-form wow fadeIn" data-wow-delay="1s" id="card-form">
       <div class="form">
         <h5>Contáctenos ahora.</h5>
         <form action="">
           <input type="text" placeholder="Nombre">
           <input type="tel" placeholder="Telefono">
           <input type="text" placeholder="Asunto">
-          <textarea rows="5" type="text" placeholder="Consulta"></textarea>
+          <textarea  style="resize: none;" rows="5" type="text" placeholder="Consulta"></textarea>
         </form>
         <button class="enviar-btn">Enviar</button>
       </div>
-      <div class="btn-contain">
+      <div class="btn-contain" id="contain-btns">
         <h5>Información.</h5>
 
         <div class="box">
@@ -243,8 +245,8 @@
           </a>
           <a href="">
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
-                viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
                 <path
                   d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
               </svg>
@@ -252,8 +254,8 @@
           </a>
           <a href="">
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
-                viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
               </svg>
             </button>
@@ -265,6 +267,10 @@
 
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
   <script src="./main.js"></script>
+  <script src="./lib/WOW-master/dist/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

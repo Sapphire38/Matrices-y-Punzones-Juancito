@@ -6,11 +6,11 @@
     scroll-behavior: smooth;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.btn-nav{
+.btn-nav {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -26,7 +26,7 @@ a{
 }
 
 
-.menu-burger{
+.menu-burger {
     display: none;
     justify-content: left;
     flex-direction: column;
@@ -42,18 +42,18 @@ a{
 
 
 @keyframes fade {
-    0%{
+    0% {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 100;
     }
 }
 
 
 
-ul{
+ul {
     list-style: none;
     margin-left: 20px;
     display: flex;
@@ -61,23 +61,23 @@ ul{
     gap: 20px;
 }
 
-ul a{
+ul a {
     color: white;
     font-size: 1vw;
 }
 
-ul a:hover{
+ul a:hover {
     color: #39B54A;
-    border-bottom: #39B54A  1px solid;
+    border-bottom: #39B54A 1px solid;
 }
 
-.cont-x{
+.cont-x {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.cont-x button{
+.cont-x button {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -282,7 +282,7 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-   
+
 }
 
 .stick-v {
@@ -437,8 +437,7 @@ h2 {
 
 
 .card-form {
-    height: 28vmax;
-    width: 45vw;
+    width: 50vw;
     margin-top: 20px;
     background-color: transparent;
     display: flex;
@@ -450,15 +449,16 @@ h2 {
     width: 60%;
     height: 100%;
     padding: 50px;
+    gap: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     background-color: rgba(54, 54, 54, 0.575);
     backdrop-filter: blur(15px);
     border-radius: 12px 0px 0px 12px;
 }
 
-.form h5{
+.form h5 {
     color: white;
     font-size: 1.3vw;
     font-weight: 700;
@@ -467,53 +467,55 @@ h2 {
 
 
 .btn-contain {
-    padding:40px;
+    padding: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
     width: 40%;
-    height: 100%;
     background-color: rgb(27, 27, 27);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border-radius: 0px 12px   12px 0px;
+    border-radius: 0px 12px 12px 0px;
 }
 
-.btn-contain h5{
+.btn-contain h5 {
     color: white;
     font-size: 1.3vw;
     font-weight: 700;
 }
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
-  
+
 }
 
-input::placeholder, textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     font-size: 0.8vw;
 }
 
-input, textarea{
+input,
+textarea {
     background-color: transparent;
     border: 0px;
     padding: 10px;
     padding-left: 0px;
-    border-bottom: 1px solid  gray;
+    border-bottom: 1px solid gray;
     transition: 300ms;
     color: white;
     margin-top: 15px;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     outline: none;
-    border-bottom:1px solid  #39B54A;
-    
+    border-bottom: 1px solid #39B54A;
+
 }
 
-.enviar-btn{
+.enviar-btn {
     height: 50px;
     background-color: #39B54A;
     border: 0px;
@@ -526,30 +528,30 @@ input:focus, textarea:focus{
     border-radius: 8px;
 }
 
-.enviar-btn:hover{
+.enviar-btn:hover {
     background-color: #31943e;
-    
+
 }
 
-.enviar-btn:active{
+.enviar-btn:active {
     background-color: #31943e;
     border: 1px solid white;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
 }
 
-.box a{
+.box a {
     color: white;
     font-weight: 300;
     font-size: 0.8vw;
 }
 
-.box-title{
+.box-title {
     font-size: 1vw;
-    padding-bottom: 5px;    
+    padding-bottom: 5px;
     color: #39B54A;
     font-weight: 500;
 }
