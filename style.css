@@ -596,3 +596,10 @@ textarea:focus {
 .buttons a svg {
     fill: white;
 }
+
+#status{
+    height: 10px;
+    font-size: 10px;
+    color: red;
+    text-align: center;
+}

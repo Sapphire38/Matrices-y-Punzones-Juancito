@@ -202,12 +202,14 @@
       <div class="form">
         <h5>Contáctenos ahora.</h5>
         <form action="">
-          <input type="text" placeholder="Nombre">
-          <input type="tel" placeholder="Telefono">
-          <input type="text" placeholder="Asunto">
-          <textarea  style="resize: none;" rows="5" type="text" placeholder="Consulta"></textarea>
+          <input type="text" id="name" placeholder="Nombre">
+          <input type="tel" id="number" placeholder="Telefono">
+          <input type="text" id="subject" placeholder="Asunto">
+          <textarea id="message" style="resize: none;" rows="5" type="text" placeholder="Consulta"></textarea>
         </form>
-        <button class="enviar-btn">Enviar</button>
+        <button onclick="validateForm()" class="enviar-btn">Enviar</button>
+        <h5 id="status"></h5>
+        <a id="btn-send" style="display: none;"></a>
       </div>
       <div class="btn-contain" id="contain-btns">
         <h5>Información.</h5>
@@ -271,6 +273,7 @@
   <script>
     new WOW().init();
   </script>
+  <script src="./validateform.js"></script>
 </body>
 
 </html>
