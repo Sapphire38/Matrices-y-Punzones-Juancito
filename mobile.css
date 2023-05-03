@@ -5,7 +5,7 @@
 
 
     .right {
-        position: absolute !;
+        position: absolute;
         top: initial;
         bottom: 50px !important;
         right: initial;
