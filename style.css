@@ -174,7 +174,7 @@ ul a:hover {
     background-size: cover;
     text-align: left;
     background-attachment: fixed;
-    padding: 200px;
+    padding: 8vw;
 }
 
 ::-webkit-scrollbar {
@@ -353,7 +353,7 @@ h2 {
 }
 
 .text-card {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     font-weight: 400;
     text-align: center;
     margin-top: 20px;
